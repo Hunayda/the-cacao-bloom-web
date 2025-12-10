@@ -54,6 +54,42 @@
       opacity:.9;
     }
 
+    .hero-actions{
+      margin-top:1.6rem;
+      display:flex;
+      gap:.8rem;
+      justify-content:center;
+      flex-wrap:wrap;
+    }
+    .btn-hero,
+    .btn-hero-secundario{
+      border-radius:999px;
+      padding:.7rem 1.4rem;
+      font-weight:700;
+      font-size:.9rem;
+      cursor:pointer;
+      transition:.2s;
+      display:inline-block;
+    }
+    .btn-hero{
+      background:#d97c5a;
+      color:#fff;
+      border:none;
+    }
+    .btn-hero:hover{
+      background:#c46544;
+      transform:translateY(-1px);
+    }
+    .btn-hero-secundario{
+      border:1px solid #fff;
+      color:#fff;
+      background:transparent;
+    }
+    .btn-hero-secundario:hover{
+      background:rgba(255,255,255,.1);
+      transform:translateY(-1px);
+    }
+
     /* NAV */
     nav{
       position:sticky;
@@ -155,6 +191,35 @@
       font-weight:500;
     }
 
+    /* COMO FUNCIONA */
+    .steps{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:1.2rem;
+      margin-top:2rem;
+    }
+    .step{
+      background:#fff;
+      border-radius:14px;
+      padding:1.2rem 1.3rem;
+      box-shadow:0 6px 16px rgba(0,0,0,.05);
+    }
+    .step-number{
+      font-weight:700;
+      color:#d97c5a;
+      margin-bottom:.3rem;
+      font-size:.9rem;
+    }
+    .step-title{
+      font-weight:700;
+      margin-bottom:.2rem;
+      font-size:.98rem;
+    }
+    .step p{
+      font-size:.9rem;
+      color:#6b5349;
+    }
+
     /* GALERÍA SIMPLE */
     .gallery{
       display:grid;
@@ -215,6 +280,14 @@
       margin-bottom:.7rem;
     }
 
+    .trust-block{
+      max-width:800px;
+      margin:2rem auto 0;
+      text-align:center;
+      font-size:.9rem;
+      color:#5b453c;
+    }
+
     /* FOOTER */
     footer{
       background:#3b241c;
@@ -241,6 +314,13 @@
       <p class="hero-sub">
         Carritos dulces, cookies gourmet, tabletas de chocolate con frutos secos y detalles artesanales para bodas, comuniones, cumpleaños y momentos especiales.
       </p>
+
+      <div class="hero-actions">
+        <a href="#contacto" class="btn-hero">Pide tu presupuesto</a>
+        <a href="https://wa.me/34TU_NUMERO" class="btn-hero-secundario" target="_blank" rel="noopener noreferrer">
+          Escríbeme por WhatsApp
+        </a>
+      </div>
     </div>
   </header>
 
@@ -248,6 +328,7 @@
   <nav>
     <a href="#sobre">Sobre mí</a>
     <a href="#carritos">Carritos dulces</a>
+    <a href="#como-funciona">Cómo funciona</a>
     <a href="#chocolate-cookies">Chocolate & Cookies</a>
     <a href="#packs">Packs & detalles</a>
     <a href="#kits">Kits creativos</a>
@@ -271,6 +352,9 @@
       Carritos dulces totalmente personalizables para bodas, comuniones, bautizos y cumpleaños. 
       Decoración cálida, tarros de cristal y productos artesanales que encajan con el estilo de tu evento.
     </p>
+    <p class="lead" style="margin-top:0.7rem;">
+      Carritos completos desde <strong>XXX&nbsp;€</strong> (según número de invitados, desplazamiento y productos incluidos).
+    </p>
 
     <div class="grid">
       <article class="card">
@@ -290,6 +374,32 @@
           <span class="tag">Comuniones & Cumpleaños</span>
         </div>
       </article>
+    </div>
+  </section>
+
+  <!-- CÓMO FUNCIONA -->
+  <section id="como-funciona">
+    <h2>Cómo funciona</h2>
+    <p class="lead">
+      Quiero que organizar tu mesa dulce sea fácil y agradable. Así es como trabajaremos juntas para tu evento.
+    </p>
+
+    <div class="steps">
+      <div class="step">
+        <div class="step-number">Paso 1</div>
+        <div class="step-title">Me cuentas tu evento</div>
+        <p>Tipo de celebración, fecha aproximada, ubicación, número de invitados y qué estilo te gusta (romántico, rústico, infantil, clásico...).</p>
+      </div>
+      <div class="step">
+        <div class="step-number">Paso 2</div>
+        <div class="step-title">Creamos tu propuesta</div>
+        <p>Te preparo una propuesta a medida con ideas de productos, presentación, combinación de colores y presupuesto orientativo.</p>
+      </div>
+      <div class="step">
+        <div class="step-number">Paso 3</div>
+        <div class="step-title">Preparo, llevo y monto</div>
+        <p>Yo me encargo de la parte dulce: elaboración artesanal, preparación de packs, montaje del carrito o mesa y recogida si es necesario.</p>
+      </div>
     </div>
   </section>
 
@@ -335,6 +445,9 @@
     <h2>Packs & detalles para invitados</h2>
     <p class="lead">
       Packs pensados para sorprender: Día de la Madre, San Valentín, eventos especiales y pequeños detalles de agradecimiento para tus invitados.
+    </p>
+    <p class="lead" style="margin-top:0.7rem;">
+      Packs personalizados desde <strong>XX&nbsp;€</strong> según combinación de productos y presentación.
     </p>
 
     <div class="grid">
@@ -391,6 +504,9 @@
     <p class="lead">
       Kits pensados para disfrutar en familia: decorar galletas, preparar chocolate caliente navideño o crear tu propia mesa dulce en casa.
     </p>
+    <p class="lead" style="margin-top:0.7rem;">
+      Kits desde <strong>XX&nbsp;€</strong> según contenido y temática.
+    </p>
 
     <div class="grid">
       <article class="card">
@@ -445,6 +561,11 @@
       Te responderé con una propuesta personalizada.
     </p>
 
+    <div class="trust-block">
+      Trabajo con producción artesanal y plazas limitadas.  
+      Es recomendable reservar con al menos <strong>4 semanas de antelación</strong>, especialmente en temporada alta (primavera y Navidad).
+    </div>
+
     <div class="contact-wrap">
       <div class="success-message" id="successMessage">Mensaje enviado correctamente. ¡Gracias por escribirme!</div>
 
@@ -452,7 +573,11 @@
       <form id="contactForm" action="https://formspree.io/f/TU_ID_DE_FORMSPREE" method="POST">
         <input type="text" name="nombre" placeholder="Nombre" required>
         <input type="email" name="email" placeholder="Correo electrónico" required>
-        <textarea name="mensaje" placeholder="Cuéntame tu evento y qué te gustaría" required></textarea>
+        <input type="text" name="evento" placeholder="Tipo de evento (boda, comunión, cumpleaños...)" required>
+        <input type="text" name="fecha" placeholder="Fecha aproximada del evento">
+        <input type="text" name="ubicacion" placeholder="Ciudad / lugar del evento">
+        <input type="number" name="invitados" placeholder="Número aproximado de invitados">
+        <textarea name="mensaje" placeholder="Cuéntame tu idea con el máximo detalle posible" required></textarea>
         <button type="submit" class="btn">Enviar mensaje</button>
       </form>
     </div>
