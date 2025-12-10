@@ -1,2 +1,2 @@
-# The Cacaco Bloom 
+# The Cacao Bloom 
 Sweet carts & artisanal chocolate treats.
