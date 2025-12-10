@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>The Cacao Bloom | Carritos dulces & detalles artesanales</title>
+
+  <meta name="description" content="The Cacao Bloom: carritos dulces para bodas, comuniones y cumpleaños, cookies gourmet, tabletas de chocolate con frutos secos, packs regalo y detalles artesanales para invitados." />
+  <meta name="keywords" content="carritos dulces, chocolate artesanal, cookies, galletas jengibre, detalles para invitados, packs regalo, The Cacao Bloom" />
+  <meta name="author" content="The Cacao Bloom" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="img/logo.png">
+
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box}
+    body{
+      font-family:'Roboto',sans-serif;
+      background:#fffaf5;
+      color:#3f2f25;
+      -webkit-font-smoothing:antialiased;
+      line-height:1.6;
+      scroll-behavior:smooth;
+    }
+    a{text-decoration:none;color:inherit}
+
+    /* HEADER */
+    header{
+      background:#3b241c;
+      color:#fff;
+      min-height:60vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+      padding:2rem 1.5rem;
+    }
+    .hero-inner{
+      max-width:900px;
+    }
+    .hero-logo{
+      width:180px;
+      max-width:60vw;
+      margin:0 auto 1.5rem;
+      display:block;
+    }
+    .hero-brand{
+      font-family:'Great Vibes',cursive;
+      font-size:2.6rem;
+      margin-bottom:.3rem;
+    }
+    .hero-sub{
+      font-size:1rem;
+      opacity:.9;
+    }
+
+    /* NAV */
+    nav{
+      position:sticky;
+      top:0;
+      z-index:20;
+      background:#fffaf5;
+      box-shadow:0 2px 8px rgba(0,0,0,.04);
+      display:flex;
+      justify-content:center;
+      gap:1rem;
+      padding:.7rem 1rem;
+    }
+    nav a{
+      font-weight:700;
+      font-size:.9rem;
+      padding:.4rem .9rem;
+      border-radius:999px;
+      transition:.2s;
+    }
+    nav a:hover{
+      background:#d97c5a;
+      color:#fff;
+    }
+
+    /* SECCIONES */
+    section{
+      max-width:1200px;
+      margin:0 auto;
+      padding:3rem 1.5rem;
+    }
+    h2{
+      font-family:'Great Vibes',cursive;
+      font-size:2.2rem;
+      text-align:center;
+      margin-bottom:.5rem;
+    }
+    h2::after{
+      content:'';
+      display:block;
+      width:72px;
+      height:3px;
+      background:#d97c5a;
+      margin:.6rem auto 0;
+      border-radius:3px;
+    }
+    .lead{
+      text-align:center;
+      max-width:800px;
+      margin:.7rem auto 0;
+      color:#5b453c;
+      font-size:.95rem;
+    }
+
+    /* GRID GENERICO */
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:1.5rem;
+      margin-top:2rem;
+    }
+    .card{
+      background:#fff;
+      border-radius:14px;
+      overflow:hidden;
+      box-shadow:0 8px 18px rgba(0,0,0,.08);
+      display:flex;
+      flex-direction:column;
+    }
+    .card img{
+      width:100%;
+      height:190px;
+      object-fit:cover;
+      display:block;
+    }
+    .card-body{
+      padding:1rem 1.1rem 1.2rem;
+      flex:1;
+      display:flex;
+      flex-direction:column;
+    }
+    .card h3{
+      font-weight:700;
+      font-size:1.05rem;
+      margin-bottom:.3rem;
+    }
+    .card p{
+      font-size:.9rem;
+      color:#6b5349;
+      flex:1;
+    }
+    .tag{
+      display:inline-block;
+      margin-top:.7rem;
+      font-size:.8rem;
+      padding:.25rem .65rem;
+      border-radius:999px;
+      background:#fff3ec;
+      color:#b55c3c;
+      font-weight:500;
+    }
+
+    /* GALERÍA SIMPLE */
+    .gallery{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+      gap:1rem;
+      margin-top:2rem;
+    }
+    .gallery img{
+      width:100%;
+      border-radius:14px;
+      height:220px;
+      object-fit:cover;
+      box-shadow:0 6px 16px rgba(0,0,0,.08);
+    }
+
+    /* CONTACTO */
+    .contact-wrap{
+      max-width:600px;
+      margin:2rem auto 0;
+    }
+    form{
+      display:flex;
+      flex-direction:column;
+      gap:.9rem;
+    }
+    input,textarea{
+      padding:.8rem .9rem;
+      border-radius:8px;
+      border:1px solid #dccfc6;
+      font-size:.95rem;
+      font-family:inherit;
+      background:#fff;
+    }
+    textarea{min-height:130px;resize:vertical;}
+    .btn{
+      background:#d97c5a;
+      color:#fff;
+      border:0;
+      padding:.85rem 1rem;
+      border-radius:999px;
+      font-weight:700;
+      cursor:pointer;
+      font-size:.95rem;
+      transition:.15s;
+      align-self:flex-start;
+    }
+    .btn:hover{
+      background:#c46544;
+      transform:translateY(-1px);
+    }
+    .success-message{
+      display:none;
+      background:#3fb16f;
+      color:#fff;
+      padding:.5rem .9rem;
+      border-radius:8px;
+      font-size:.85rem;
+      margin-bottom:.7rem;
+    }
+
+    /* FOOTER */
+    footer{
+      background:#3b241c;
+      color:#fff;
+      text-align:center;
+      padding:1.5rem 1rem;
+      font-size:.85rem;
+      margin-top:1rem;
+    }
+
+    @media(max-width:600px){
+      .hero-brand{font-size:2.1rem;}
+      header{min-height:55vh;}
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HERO -->
+  <header>
+    <div class="hero-inner">
+      <img src="img/logo.png" alt="The Cacao Bloom" class="hero-logo">
+      <div class="hero-brand">The Cacao Bloom</div>
+      <p class="hero-sub">
+        Carritos dulces, cookies gourmet, tabletas de chocolate con frutos secos y detalles artesanales para bodas, comuniones, cumpleaños y momentos especiales.
+      </p>
+    </div>
+  </header>
+
+  <!-- NAV -->
+  <nav>
+    <a href="#sobre">Sobre mí</a>
+    <a href="#carritos">Carritos dulces</a>
+    <a href="#chocolate-cookies">Chocolate & Cookies</a>
+    <a href="#packs">Packs & detalles</a>
+    <a href="#kits">Kits creativos</a>
+    <a href="#galeria">Galería</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <!-- SOBRE -->
+  <section id="sobre">
+    <h2>Sobre The Cacao Bloom</h2>
+    <p class="lead">
+      The Cacao Bloom nace de la pasión por el chocolate, los pequeños detalles y los momentos que se celebran alrededor de una mesa dulce bonita. 
+      Trabajo de forma artesanal, en pequeños lotes, cuidando la estética tanto como el sabor.
+    </p>
+  </section>
+
+  <!-- CARRITOS DULCES -->
+  <section id="carritos">
+    <h2>Carritos dulces</h2>
+    <p class="lead">
+      Carritos dulces totalmente personalizables para bodas, comuniones, bautizos y cumpleaños. 
+      Decoración cálida, tarros de cristal y productos artesanales que encajan con el estilo de tu evento.
+    </p>
+
+    <div class="grid">
+      <article class="card">
+        <img src="img/carrito-dulces-bodas.png" alt="Carrito de dulces para bodas">
+        <div class="card-body">
+          <h3>Carrito de bodas</h3>
+          <p>Carrito de madera con tarros de cristal, guirnaldas de luces y una selección de chocolates, cookies y dulces para tus invitados.</p>
+          <span class="tag">Bodas</span>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="img/carrito-dulces-suenos.png" alt="Carrito de dulces de ensueño">
+        <div class="card-body">
+          <h3>Carrito “Dulces sueños”</h3>
+          <p>Un carrito dulce pensado para comuniones y cumpleaños, con colores suaves, chuches seleccionadas y pequeños detalles personalizados.</p>
+          <span class="tag">Comuniones & Cumpleaños</span>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- CHOCOLATE & COOKIES -->
+  <section id="chocolate-cookies">
+    <h2>Chocolate & Cookies gourmet</h2>
+    <p class="lead">
+      Tabletas de chocolate cortadas de forma irregular, con frutos secos seleccionados, y cookies tipo americanas llenas de textura y sabor.
+    </p>
+
+    <div class="grid">
+      <article class="card">
+        <img src="img/tabletas-chocolate-frutos-secos.png" alt="Tabletas de chocolate con frutos secos">
+        <div class="card-body">
+          <h3>Tabletas de chocolate gourmet</h3>
+          <p>Chocolate blanco con fresas deshidratadas y quinoa hinchada, chocolate con leche con avellanas y pipas de calabaza, y chocolate negro con almendras, pasas y bayas de goji.</p>
+          <span class="tag">Chocolate artesanal</span>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="img/cookies-gourmet.png" alt="Cookies gourmet artesanales">
+        <div class="card-body">
+          <h3>Cookies gourmet</h3>
+          <p>Mini cookies tipo americanas: chocolate blanco con frambuesa, chocolate negro con pistacho, y mezcla de tres chocolates para los más golosos.</p>
+          <span class="tag">Cookies</span>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="img/galletas-jengibre-cajitas.png" alt="Galletas de jengibre en cajitas">
+        <div class="card-body">
+          <h3>Galletas de jengibre</h3>
+          <p>Galletas de jengibre en cajitas bonitas, perfectas como detalle individual para invitados o como parte de los packs regalo.</p>
+          <span class="tag">Jengibre</span>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- PACKS & DETALLES -->
+  <section id="packs">
+    <h2>Packs & detalles para invitados</h2>
+    <p class="lead">
+      Packs pensados para sorprender: Día de la Madre, San Valentín, eventos especiales y pequeños detalles de agradecimiento para tus invitados.
+    </p>
+
+    <div class="grid">
+      <article class="card">
+        <img src="img/bolsitas-para-invitados.png" alt="Bolsitas para invitados">
+        <div class="card-body">
+          <h3>Bolsitas para invitados</h3>
+          <p>Bolsitas transparentes con mini cookies, mini tabletas de chocolate y mini magdalenas, etiquetadas y listas para colocar en tu mesa dulce.</p>
+          <span class="tag">Detalles evento</span>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="img/detalles-para-invitados.png" alt="Detalles para invitados">
+        <div class="card-body">
+          <h3>Detalles personalizados</h3>
+          <p>Detalles pensados para comuniones, bodas y eventos de empresa: dulces personalizados, etiquetas con mensaje y presentación cuidada.</p>
+          <span class="tag">Personalizable</span>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="img/pack-dia-de-la-madre.png" alt="Pack Día de la Madre">
+        <div class="card-body">
+          <h3>Pack Día de la Madre</h3>
+          <p>Caja con selección de dulces: mini cookies, chocolate artesanal y bolsitas especiales para decir “gracias mamá” de una forma muy dulce.</p>
+          <span class="tag">Día de la Madre</span>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="img/pack-san-valentin.png" alt="Pack San Valentín">
+        <div class="card-body">
+          <h3>Pack San Valentín</h3>
+          <p>Una caja romántica con chocolate, bombones y dulces tematizados para celebrar el amor con mucho cacao.</p>
+          <span class="tag">San Valentín</span>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="img/packs.png" alt="Packs de regalo">
+        <div class="card-body">
+          <h3>Packs de regalo</h3>
+          <p>Diversos formatos de packs para regalar o regalarte: combinaciones de chocolate, cookies, kits y bolsitas para invitados.</p>
+          <span class="tag">Regalos</span>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- KITS -->
+  <section id="kits">
+    <h2>Kits creativos</h2>
+    <p class="lead">
+      Kits pensados para disfrutar en familia: decorar galletas, preparar chocolate caliente navideño o crear tu propia mesa dulce en casa.
+    </p>
+
+    <div class="grid">
+      <article class="card">
+        <img src="img/kit-decoracion-galletas.png" alt="Kit de decoración de galletas">
+        <div class="card-body">
+          <h3>Kit decoración de galletas</h3>
+          <p>Todo lo necesario para que los más peques decoren sus propias galletas: bases, glasa, toppings y presentación en caja kraft.</p>
+          <span class="tag">Niños</span>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="img/kit-decoracion-galletas-easter.png" alt="Kit galletas Easter">
+        <div class="card-body">
+          <h3>Kit Easter cookies</h3>
+          <p>Versión especial de Semana Santa, con formas primaverales y colores suaves para una tarde de galletas en familia.</p>
+          <span class="tag">Semana Santa</span>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="img/kit-taza-chocolate-navidad.png" alt="Kit taza de chocolate navideña">
+        <div class="card-body">
+          <h3>Kit taza navideña</h3>
+          <p>Incluye taza temática, galletas de jengibre, mezcla para chocolate caliente y mini nubes de azúcar. Ideal como detalle navideño.</p>
+          <span class="tag">Navidad</span>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- GALERÍA -->
+  <section id="galeria">
+    <h2>Galería & catálogo</h2>
+    <p class="lead">
+      Algunos ejemplos de presentaciones, mesas dulces y catálogo visual de productos.
+    </p>
+
+    <div class="gallery">
+      <img src="img/catalogo.png" alt="Catálogo The Cacao Bloom">
+      <img src="img/carrito-dulces-bodas.png" alt="Carrito dulce para bodas">
+      <img src="img/tabletas-chocolate-frutos-secos.png" alt="Tabletas de chocolate con frutos secos">
+      <img src="img/cookies-gourmet.png" alt="Cookies gourmet artesanales">
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <p class="lead">
+      Cuéntame tu idea: tipo de evento, fecha aproximada, número de invitados y qué te gustaría incluir. 
+      Te responderé con una propuesta personalizada.
+    </p>
+
+    <div class="contact-wrap">
+      <div class="success-message" id="successMessage">Mensaje enviado correctamente. ¡Gracias por escribirme!</div>
+
+      <!-- Cambia la URL de Formspree por la tuya -->
+      <form id="contactForm" action="https://formspree.io/f/TU_ID_DE_FORMSPREE" method="POST">
+        <input type="text" name="nombre" placeholder="Nombre" required>
+        <input type="email" name="email" placeholder="Correo electrónico" required>
+        <textarea name="mensaje" placeholder="Cuéntame tu evento y qué te gustaría" required></textarea>
+        <button type="submit" class="btn">Enviar mensaje</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; <span id="year"></span> The Cacao Bloom · Dulces artesanales para momentos especiales.</p>
+  </footer>
+
+  <script>
+    // Año automático
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Envío Formspree con mensaje de éxito
+    const form = document.getElementById('contactForm');
+    const success = document.getElementById('successMessage');
+
+    form.addEventListener('submit', function(e){
+      e.preventDefault();
+      const data = new FormData(form);
+      fetch(form.action, {
+        method: 'POST',
+        body: data,
+        headers: { 'Accept': 'application/json' }
+      }).then(res => {
+        if(res.ok){
+          success.style.display = 'block';
+          form.reset();
+          setTimeout(()=> success.style.display = 'none', 5000);
+        } else {
+          alert('Ha habido un error al enviar el mensaje. Inténtalo de nuevo.');
+        }
+      }).catch(()=>{
+        alert('Ha habido un error de conexión. Inténtalo de nuevo.');
+      });
+    });
+  </script>
+</body>
+</html>
