@@ -333,6 +333,18 @@
       .hero-brand{font-size:2.1rem;}
       header{min-height:55vh;}
     }
+    /* ANIMACIONES SUAVES DE ENTRADA */
+.reveal{
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity .6s ease, transform .6s ease;
+}
+
+.reveal.in-view{
+  opacity: 1;
+  transform: translateY(0);
+}
+
   </style>
 </head>
 <body>
@@ -390,7 +402,7 @@
     </p>
 
     <div class="grid">
-      <article class="card">
+      <article class="card reveal">
         <img src="img/carrito-dulces-bodas.png" alt="Carrito de dulces para bodas">
         <div class="card-body">
           <h3>Carrito de bodas</h3>
@@ -399,7 +411,7 @@
         </div>
       </article>
 
-      <article class="card">
+      <article class="card reveal">
         <img src="img/carrito-dulces-suenos.png" alt="Carrito de dulces de ensueño">
         <div class="card-body">
           <h3>Carrito “Dulces sueños”</h3>
@@ -408,7 +420,7 @@
         </div>
       </article>
 
-      <article class="card">
+      <article class="card reveal">
         <img src="img/Candy_bar_comuniones_bautizos_cumpleaños.png" alt="Candy bar infantil para comuniones, bautizos y cumpleaños">
         <div class="card-body">
           <h3>Candy bar infantil</h3>
@@ -428,17 +440,17 @@
     </p>
 
     <div class="steps">
-      <div class="step">
+      <div class="step reveal">
         <div class="step-number">Paso 1</div>
         <div class="step-title">Me cuentas tu evento</div>
         <p>Tipo de celebración, fecha aproximada, ubicación, número de invitados y qué estilo te gusta (romántico, rústico, infantil, clásico...).</p>
       </div>
-      <div class="step">
+      <div class="step reveal">
         <div class="step-number">Paso 2</div>
         <div class="step-title">Creamos tu propuesta</div>
         <p>Te preparo una propuesta a medida con ideas de productos, presentación, combinación de colores y presupuesto orientativo.</p>
       </div>
-      <div class="step">
+      <div class="step reveal">
         <div class="step-number">Paso 3</div>
         <div class="step-title">Preparo, llevo y monto</div>
         <p>Yo me encargo de la parte dulce: elaboración artesanal, preparación de packs, montaje del carrito o mesa y recogida si es necesario.</p>
@@ -454,7 +466,7 @@
     </p>
 
     <div class="grid">
-      <article class="card">
+      <article class="card reveal">
         <img src="img/tabletas-chocolate-frutos-secos.png" alt="Tabletas de chocolate con frutos secos">
         <div class="card-body">
           <h3>Tabletas de chocolate gourmet</h3>
@@ -464,7 +476,7 @@
         </div>
       </article>
 
-      <article class="card">
+      <article class="card reveal">
         <img src="img/cookies-gourmet.png" alt="Cookies gourmet artesanales">
         <div class="card-body">
           <h3>Cookies gourmet</h3>
@@ -474,7 +486,7 @@
         </div>
       </article>
 
-      <article class="card">
+      <article class="card reveal">
         <img src="img/galletas-jengibre-cajitas.png" alt="Galletas de jengibre en cajitas">
         <div class="card-body">
           <h3>Galletas de jengibre</h3>
@@ -497,7 +509,7 @@
     </p>
 
     <div class="grid">
-      <article class="card">
+      <article class="card reveal">
         <img src="img/bolsitas-para-invitados.png" alt="Bolsitas para invitados">
         <div class="card-body">
           <h3>Bolsitas para invitados</h3>
@@ -507,7 +519,7 @@
         </div>
       </article>
 
-      <article class="card">
+      <article class="card reveal">
         <img src="img/detalles-para-invitados.png" alt="Detalles para invitados">
         <div class="card-body">
           <h3>Detalles personalizados</h3>
@@ -517,7 +529,7 @@
         </div>
       </article>
 
-      <article class="card">
+      <article class="card reveal">
         <img src="img/pack-dia-de-la-madre.png" alt="Pack Día de la Madre">
         <div class="card-body">
           <h3>Pack Día de la Madre</h3>
@@ -527,7 +539,7 @@
         </div>
       </article>
 
-      <article class="card">
+      <article class="card reveal">
         <img src="img/pack-san-valentin.png" alt="Pack San Valentín">
         <div class="card-body">
           <h3>Pack San Valentín</h3>
@@ -537,7 +549,7 @@
         </div>
       </article>
 
-      <article class="card">
+      <article class="card reveal">
         <img src="img/packs.png" alt="Packs de regalo">
         <div class="card-body">
           <h3>Packs de regalo</h3>
@@ -560,7 +572,7 @@
     </p>
 
     <div class="grid">
-      <article class="card">
+      <article class="card reveal">
         <img src="img/kit-decoracion-galletas.png" alt="Kit de decoración de galletas">
         <div class="card-body">
           <h3>Kit decoración de galletas</h3>
@@ -570,7 +582,7 @@
         </div>
       </article>
 
-      <article class="card">
+      <article class="card reveal">
         <img src="img/kit-decoracion-galletas-easter.png" alt="Kit galletas Easter">
         <div class="card-body">
           <h3>Kit Easter cookies</h3>
@@ -580,7 +592,7 @@
         </div>
       </article>
 
-      <article class="card">
+      <article class="card reveal">
         <img src="img/kit-taza-chocolate-navidad.png" alt="Kit taza de chocolate navideña">
         <div class="card-body">
           <h3>Kit taza navideña</h3>
@@ -603,7 +615,7 @@
     </p>
 
     <div class="grid">
-      <article class="card">
+      <article class="card reveal">
         <div class="card-body">
           <h3>Carritos dulces</h3>
           <p>
@@ -624,7 +636,7 @@
         </div>
       </article>
 
-      <article class="card">
+      <article class="card reveal">
         <div class="card-body">
           <h3>Chocolate & cookies</h3>
           <p>
@@ -645,7 +657,7 @@
         </div>
       </article>
 
-      <article class="card">
+      <article class="card reveal">
         <div class="card-body">
           <h3>Packs & detalles</h3>
           <p>
@@ -666,7 +678,7 @@
         </div>
       </article>
 
-      <article class="card">
+      <article class="card reveal">
         <div class="card-body">
           <h3>Kits creativos</h3>
           <p>
@@ -696,13 +708,14 @@
       Algunos ejemplos de presentaciones, mesas dulces y catálogo visual de productos.
     </p>
 
-    <div class="gallery">
-      <img src="img/catalogo.png" alt="Catálogo The Cacao Bloom">
-      <img src="img/carrito-dulces-bodas.png" alt="Carrito dulce para bodas">
-      <img src="img/Candy_bar_comuniones_bautizos_cumpleaños.png" alt="Candy bar infantil para comuniones, bautizos y cumpleaños">
-      <img src="img/tabletas-chocolate-frutos-secos.png" alt="Tabletas de chocolate con frutos secos">
-      <img src="img/cookies-gourmet.png" alt="Cookies gourmet artesanales">
-    </div>
+<div class="gallery">
+  <img src="img/catalogo.png" alt="Catálogo The Cacao Bloom" class="reveal">
+  <img src="img/carrito-dulces-bodas.png" alt="Carrito dulce para bodas" class="reveal">
+  <img src="img/Candy_bar_comuniones_bautizos_cumpleaños.png" alt="Candy bar infantil para comuniones, bautizos y cumpleaños" class="reveal">
+  <img src="img/tabletas-chocolate-frutos-secos.png" alt="Tabletas de chocolate con frutos secos" class="reveal">
+  <img src="img/cookies-gourmet.png" alt="Cookies gourmet artesanales" class="reveal">
+</div>
+
 
   </section>
 
@@ -768,8 +781,27 @@
       });
     });
   </script>
+  <script>
+  // Animación suave de entrada al hacer scroll
+  const revealElements = document.querySelectorAll('.reveal');
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('in-view');
+        observer.unobserve(entry.target); // evita que se repita
+      }
+    });
+  },{
+    threshold: 0.15
+  });
+
+  revealElements.forEach(el => observer.observe(el));
+</script>
+
 </body>
 </html>
+
 
 
 
