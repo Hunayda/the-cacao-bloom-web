@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>The Cacao Bloom | Carritos dulces & detalles artesanales</title>
 
-  <meta name="description" content="The Cacao Bloom: carritos dulces para bodas, comuniones y cumpleaños, cookies gourmet, tabletas de chocolate con frutos secos, packs regalo y detalles artesanales para invitados." />
-  <meta name="keywords" content="carritos dulces, chocolate artesanal, cookies, galletas jengibre, detalles para invitados, packs regalo, The Cacao Bloom" />
+  <meta name="description" content="The Cacao Bloom: carritos dulces, candy bar y mesas de chuches artesanales para bodas, comuniones, bautizos y cumpleaños en Las Rozas, Majadahonda, Boadilla, Villanueva del Pardillo y alrededores." />
+  <meta name="keywords" content="carritos dulces, candy bar, mesas dulces, chocolate artesanal, cookies, galletas jengibre, detalles para invitados, packs regalo, Las Rozas, Majadahonda, Boadilla, Villanueva del Pardillo" />
   <meta name="author" content="The Cacao Bloom" />
 
   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
@@ -160,19 +160,17 @@
       flex-direction:column;
     }
     .card img{
-  width: 100%;
-  height: 260px;
-  object-fit: cover;
-  display: block;
-  border-radius: 6px;
-  transition: transform .35s ease, box-shadow .35s ease;
-}
-
-.card:hover img{
-  transform: scale(1.04);   /* zoom suave */
-  box-shadow: 0 10px 24px rgba(0,0,0,.15);
-}
-    
+      width: 100%;
+      height: 260px;
+      object-fit: cover;
+      display: block;
+      border-radius: 6px;
+      transition: transform .35s ease, box-shadow .35s ease;
+    }
+    .card:hover img{
+      transform: scale(1.04);
+      box-shadow: 0 10px 24px rgba(0,0,0,.15);
+    }
     .card-body{
       padding:1rem 1.1rem 1.2rem;
       flex:1;
@@ -251,20 +249,18 @@
       margin-top:2rem;
     }
     .gallery img{
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
-  display: block;
-  border-radius: 14px;
-  box-shadow: 0 6px 16px rgba(0,0,0,.08);
-  transition: transform .35s ease, box-shadow .35s ease;
-}
-
-.gallery img:hover{
-  transform: scale(1.05);   /* un poquito más de zoom que en cards */
-  box-shadow: 0 12px 32px rgba(0,0,0,.18);
-}
-
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      display: block;
+      border-radius: 14px;
+      box-shadow: 0 6px 16px rgba(0,0,0,.08);
+      transition: transform .35s ease, box-shadow .35s ease;
+    }
+    .gallery img:hover{
+      transform: scale(1.05);
+      box-shadow: 0 12px 32px rgba(0,0,0,.18);
+    }
 
     /* CONTACTO */
     .contact-wrap{
@@ -319,6 +315,28 @@
       color:#5b453c;
     }
 
+    .contact-info{
+      max-width:600px;
+      margin:1.5rem auto 0;
+      text-align:center;
+      font-size:.9rem;
+      color:#5b453c;
+    }
+    .contact-info strong{
+      font-weight:700;
+    }
+
+    /* ANIMACIONES SUAVES */
+    .reveal{
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity .6s ease, transform .6s ease;
+    }
+    .reveal.in-view{
+      opacity: 1;
+      transform: translateY(0);
+    }
+
     /* FOOTER */
     footer{
       background:#3b241c;
@@ -332,19 +350,9 @@
     @media(max-width:600px){
       .hero-brand{font-size:2.1rem;}
       header{min-height:55vh;}
+      nav{gap:.5rem;}
+      nav a{font-size:.8rem;padding:.35rem .7rem;}
     }
-    /* ANIMACIONES SUAVES DE ENTRADA */
-.reveal{
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity .6s ease, transform .6s ease;
-}
-
-.reveal.in-view{
-  opacity: 1;
-  transform: translateY(0);
-}
-
   </style>
 </head>
 <body>
@@ -355,12 +363,12 @@
       <img src="img/logo.png" alt="The Cacao Bloom" class="hero-logo">
       <div class="hero-brand">The Cacao Bloom</div>
       <p class="hero-sub">
-        Carritos dulces, cookies gourmet, tabletas de chocolate con frutos secos y detalles artesanales para bodas, comuniones, cumpleaños y momentos especiales.
+        Carritos dulces, candy bar y detalles artesanales para bodas, comuniones, bautizos y cumpleaños en la zona noroeste de Madrid.
       </p>
 
       <div class="hero-actions">
         <a href="#contacto" class="btn-hero">Pide tu presupuesto</a>
-        <a href="https://wa.me/34TU_NUMERO" class="btn-hero-secundario" target="_blank" rel="noopener noreferrer">
+        <a href="https://wa.me/34600761390" class="btn-hero-secundario" target="_blank" rel="noopener noreferrer">
           Escríbeme por WhatsApp
         </a>
       </div>
@@ -369,13 +377,14 @@
 
   <!-- NAV -->
   <nav>
-    <a href="#sobre">Sobre mí</a>
+    <a href="#sobre">Sobre nosotros</a>
     <a href="#carritos">Carritos dulces</a>
     <a href="#como-funciona">Cómo funciona</a>
     <a href="#chocolate-cookies">Chocolate & Cookies</a>
     <a href="#packs">Packs & detalles</a>
     <a href="#kits">Kits creativos</a>
     <a href="#tarifas">Tarifas</a>
+    <a href="#zona">Zona de servicio</a>
     <a href="#galeria">Galería</a>
     <a href="#contacto">Contacto</a>
   </nav>
@@ -385,11 +394,13 @@
     <h2>Sobre The Cacao Bloom</h2>
     <p class="lead">
       The Cacao Bloom nace de la pasión por el chocolate, los pequeños detalles y los momentos que se celebran alrededor de una mesa dulce bonita. 
-      Trabajo de forma artesanal, en pequeños lotes, cuidando la estética tanto como el sabor.
+    </p>
+    <p class="lead" style="margin-top:0.7rem;">
+      Creemos en los detalles hechos con calma: recetas cuidadas, ingredientes seleccionados, flores, cintas y etiquetas que cuentan una historia. 
+      Nos ilusiona ayudarte a crear un rincón dulce que no solo esté rico, sino que haga decir “wow” a tus invitados.
     </p>
   </section>
 
-  <!-- CARRITOS DULCES -->
   <!-- CARRITOS DULCES -->
   <section id="carritos">
     <h2>Carritos dulces</h2>
@@ -430,7 +441,6 @@
       </article>
     </div>
   </section>
-
 
   <!-- CÓMO FUNCIONA -->
   <section id="como-funciona">
@@ -701,6 +711,17 @@
     </div>
   </section>
 
+  <!-- ZONA DE SERVICIO -->
+  <section id="zona">
+    <h2>Zona de servicio</h2>
+    <p class="lead">
+      Trabajo principalmente en la zona noroeste de Madrid: Las Rozas, Majadahonda, Boadilla del Monte, Villanueva del Pardillo, Villanueva de la Cañada, Villaviciosa de Odón y alrededores.
+    </p>
+    <p class="lead" style="margin-top:0.7rem;">
+      Si tu evento se celebra en otra ubicación, cuéntamelo y vemos juntas la mejor forma de llegar hasta allí.
+    </p>
+  </section>
+
   <!-- GALERÍA -->
   <section id="galeria">
     <h2>Galería & catálogo</h2>
@@ -708,15 +729,13 @@
       Algunos ejemplos de presentaciones, mesas dulces y catálogo visual de productos.
     </p>
 
-<div class="gallery">
-  <img src="img/catalogo.png" alt="Catálogo The Cacao Bloom" class="reveal">
-  <img src="img/carrito-dulces-bodas.png" alt="Carrito dulce para bodas" class="reveal">
-  <img src="img/Candy_bar_comuniones_bautizos_cumpleaños.png" alt="Candy bar infantil para comuniones, bautizos y cumpleaños" class="reveal">
-  <img src="img/tabletas-chocolate-frutos-secos.png" alt="Tabletas de chocolate con frutos secos" class="reveal">
-  <img src="img/cookies-gourmet.png" alt="Cookies gourmet artesanales" class="reveal">
-</div>
-
-
+    <div class="gallery">
+      <img src="img/catalogo.png" alt="Catálogo The Cacao Bloom" class="reveal">
+      <img src="img/carrito-dulces-bodas.png" alt="Carrito dulce para bodas" class="reveal">
+      <img src="img/Candy_bar_comuniones_bautizos_cumpleaños.png" alt="Candy bar infantil para comuniones, bautizos y cumpleaños" class="reveal">
+      <img src="img/tabletas-chocolate-frutos-secos.png" alt="Tabletas de chocolate con frutos secos" class="reveal">
+      <img src="img/cookies-gourmet.png" alt="Cookies gourmet artesanales" class="reveal">
+    </div>
   </section>
 
   <!-- CONTACTO -->
@@ -729,7 +748,14 @@
 
     <div class="trust-block">
       Trabajo con producción artesanal y plazas limitadas.  
-      Es recomendable reservar con al menos <strong>4 semanas de antelación</strong>, especialmente en temporada alta (primavera y Navidad).
+      Es recomendable reservar con al menos <strong>4 semanas de antelación</strong>, especialmente en primavera y Navidad.
+    </div>
+
+    <div class="contact-info">
+      También puedes escribirme directamente a<br>
+      <strong>hunayda@hotmail.es</strong><br>
+      o por WhatsApp / teléfono al<br>
+      <strong>+34&nbsp;600&nbsp;761&nbsp;390</strong>.
     </div>
 
     <div class="contact-wrap">
@@ -750,7 +776,7 @@
   </section>
 
   <footer>
-    <p>&copy; <span id="year"></span> The Cacao Bloom · Dulces artesanales para momentos especiales.</p>
+    <p>&copy; <span id="year"></span> The Cacao Bloom · Dulces artesanales para momentos especiales · Carritos dulces y candy bar en Las Rozas, Majadahonda, Boadilla y zona noroeste de Madrid.</p>
   </footer>
 
   <script>
@@ -781,29 +807,23 @@
       });
     });
   </script>
+
   <script>
-  // Animación suave de entrada al hacer scroll
-  const revealElements = document.querySelectorAll('.reveal');
+    // Animación suave de entrada al hacer scroll
+    const revealElements = document.querySelectorAll('.reveal');
 
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('in-view');
-        observer.unobserve(entry.target); // evita que se repita
-      }
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in-view');
+          observer.unobserve(entry.target);
+        }
+      });
+    },{
+      threshold: 0.15
     });
-  },{
-    threshold: 0.15
-  });
 
-  revealElements.forEach(el => observer.observe(el));
-</script>
-
+    revealElements.forEach(el => observer.observe(el));
+  </script>
 </body>
 </html>
-
-
-
-
-
-
