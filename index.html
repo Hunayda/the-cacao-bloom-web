@@ -101,6 +101,7 @@
       justify-content:center;
       gap:1rem;
       padding:.7rem 1rem;
+      flex-wrap:wrap;
     }
     nav a{
       font-weight:700;
@@ -190,6 +191,12 @@
       color:#b55c3c;
       font-weight:500;
     }
+    .price{
+      margin-top:.45rem;
+      font-weight:700;
+      color:#3b241c;
+      font-size:.95rem;
+    }
 
     /* COMO FUNCIONA */
     .steps{
@@ -218,6 +225,14 @@
     .step p{
       font-size:.9rem;
       color:#6b5349;
+    }
+
+    /* TARIFAS */
+    .tarifas-note{
+      margin-top:.7rem;
+      font-size:.85rem;
+      color:#7a655a;
+      text-align:center;
     }
 
     /* GALERÍA SIMPLE */
@@ -317,7 +332,7 @@
 
       <div class="hero-actions">
         <a href="#contacto" class="btn-hero">Pide tu presupuesto</a>
-        <a href="https://wa.me/34600761390" class="btn-hero-secundario" target="_blank" rel="noopener noreferrer">
+        <a href="https://wa.me/34TU_NUMERO" class="btn-hero-secundario" target="_blank" rel="noopener noreferrer">
           Escríbeme por WhatsApp
         </a>
       </div>
@@ -332,6 +347,7 @@
     <a href="#chocolate-cookies">Chocolate & Cookies</a>
     <a href="#packs">Packs & detalles</a>
     <a href="#kits">Kits creativos</a>
+    <a href="#tarifas">Tarifas</a>
     <a href="#galeria">Galería</a>
     <a href="#contacto">Contacto</a>
   </nav>
@@ -353,7 +369,7 @@
       Decoración cálida, tarros de cristal y productos artesanales que encajan con el estilo de tu evento.
     </p>
     <p class="lead" style="margin-top:0.7rem;">
-      Carritos completos desde <strong>XXX&nbsp;€</strong> (según número de invitados, desplazamiento y productos incluidos).
+      Carritos completos desde <strong>250&nbsp;€</strong> (según número de invitados, desplazamiento y productos incluidos).
     </p>
 
     <div class="grid">
@@ -417,6 +433,7 @@
           <h3>Tabletas de chocolate gourmet</h3>
           <p>Chocolate blanco con fresas deshidratadas y quinoa hinchada, chocolate con leche con avellanas y pipas de calabaza, y chocolate negro con almendras, pasas y bayas de goji.</p>
           <span class="tag">Chocolate artesanal</span>
+          <p class="price">Desde 6,50&nbsp;€ / unidad · Pack 3: 18&nbsp;€</p>
         </div>
       </article>
 
@@ -426,6 +443,7 @@
           <h3>Cookies gourmet</h3>
           <p>Mini cookies tipo americanas: chocolate blanco con frambuesa, chocolate negro con pistacho, y mezcla de tres chocolates para los más golosos.</p>
           <span class="tag">Cookies</span>
+          <p class="price">Desde 1,80&nbsp;€ / unidad · Pack 6: 10&nbsp;€ · Pack 12: 18&nbsp;€</p>
         </div>
       </article>
 
@@ -435,6 +453,7 @@
           <h3>Galletas de jengibre</h3>
           <p>Galletas de jengibre en cajitas bonitas, perfectas como detalle individual para invitados o como parte de los packs regalo.</p>
           <span class="tag">Jengibre</span>
+          <p class="price">Desde 7,50&nbsp;€ / caja</p>
         </div>
       </article>
     </div>
@@ -447,7 +466,7 @@
       Packs pensados para sorprender: Día de la Madre, San Valentín, eventos especiales y pequeños detalles de agradecimiento para tus invitados.
     </p>
     <p class="lead" style="margin-top:0.7rem;">
-      Packs personalizados desde <strong>XX&nbsp;€</strong> según combinación de productos y presentación.
+      Packs personalizados desde <strong>12&nbsp;€</strong> según combinación de productos y presentación.
     </p>
 
     <div class="grid">
@@ -457,6 +476,7 @@
           <h3>Bolsitas para invitados</h3>
           <p>Bolsitas transparentes con mini cookies, mini tabletas de chocolate y mini magdalenas, etiquetadas y listas para colocar en tu mesa dulce.</p>
           <span class="tag">Detalles evento</span>
+          <p class="price">Desde 3,50&nbsp;€ / unidad · Etiqueta personalizada +0,50&nbsp;€</p>
         </div>
       </article>
 
@@ -466,6 +486,7 @@
           <h3>Detalles personalizados</h3>
           <p>Detalles pensados para comuniones, bodas y eventos de empresa: dulces personalizados, etiquetas con mensaje y presentación cuidada.</p>
           <span class="tag">Personalizable</span>
+          <p class="price">Desde 5,50&nbsp;€ / unidad</p>
         </div>
       </article>
 
@@ -475,6 +496,7 @@
           <h3>Pack Día de la Madre</h3>
           <p>Caja con selección de dulces: mini cookies, chocolate artesanal y bolsitas especiales para decir “gracias mamá” de una forma muy dulce.</p>
           <span class="tag">Día de la Madre</span>
+          <p class="price">Desde 18&nbsp;€</p>
         </div>
       </article>
 
@@ -484,6 +506,7 @@
           <h3>Pack San Valentín</h3>
           <p>Una caja romántica con chocolate, bombones y dulces tematizados para celebrar el amor con mucho cacao.</p>
           <span class="tag">San Valentín</span>
+          <p class="price">Desde 15&nbsp;€</p>
         </div>
       </article>
 
@@ -493,6 +516,7 @@
           <h3>Packs de regalo</h3>
           <p>Diversos formatos de packs para regalar o regalarte: combinaciones de chocolate, cookies, kits y bolsitas para invitados.</p>
           <span class="tag">Regalos</span>
+          <p class="price">Desde 12&nbsp;€</p>
         </div>
       </article>
     </div>
@@ -505,7 +529,7 @@
       Kits pensados para disfrutar en familia: decorar galletas, preparar chocolate caliente navideño o crear tu propia mesa dulce en casa.
     </p>
     <p class="lead" style="margin-top:0.7rem;">
-      Kits desde <strong>XX&nbsp;€</strong> según contenido y temática.
+      Kits desde <strong>12&nbsp;€</strong> según contenido y temática.
     </p>
 
     <div class="grid">
@@ -515,6 +539,7 @@
           <h3>Kit decoración de galletas</h3>
           <p>Todo lo necesario para que los más peques decoren sus propias galletas: bases, glasa, toppings y presentación en caja kraft.</p>
           <span class="tag">Niños</span>
+          <p class="price">Desde 12&nbsp;€</p>
         </div>
       </article>
 
@@ -524,6 +549,7 @@
           <h3>Kit Easter cookies</h3>
           <p>Versión especial de Semana Santa, con formas primaverales y colores suaves para una tarde de galletas en familia.</p>
           <span class="tag">Semana Santa</span>
+          <p class="price">Desde 14&nbsp;€</p>
         </div>
       </article>
 
@@ -533,6 +559,104 @@
           <h3>Kit taza navideña</h3>
           <p>Incluye taza temática, galletas de jengibre, mezcla para chocolate caliente y mini nubes de azúcar. Ideal como detalle navideño.</p>
           <span class="tag">Navidad</span>
+          <p class="price">Desde 16&nbsp;€</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- TARIFAS -->
+  <section id="tarifas">
+    <h2>Tarifas</h2>
+    <p class="lead">
+      Estos precios son orientativos y pueden ajustarse según el número de invitados, el tipo de evento, la personalización y el desplazamiento.
+    </p>
+    <p class="tarifas-note">
+      Todos los servicios se confirman siempre con un presupuesto detallado por escrito.
+    </p>
+
+    <div class="grid">
+      <article class="card">
+        <div class="card-body">
+          <h3>Carritos dulces</h3>
+          <p>
+            <strong>Carrito básico</strong><br>
+            Carrito de madera + montaje básico + 3 tipos de dulces estándar.<br>
+            <span class="price">Desde 250&nbsp;€</span>
+          </p>
+          <p style="margin-top:.7rem;">
+            <strong>Carrito estándar</strong><br>
+            Decoración cuidada + 5 tipos de dulces artesanales + montaje y recogida.<br>
+            <span class="price">Desde 320&nbsp;€</span>
+          </p>
+          <p style="margin-top:.7rem;">
+            <strong>Carrito premium</strong><br>
+            Versión más completa con 7 tipos de dulces, decoración temática y detalles extra.<br>
+            <span class="price">Desde 380&nbsp;€</span>
+          </p>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-body">
+          <h3>Chocolate & cookies</h3>
+          <p>
+            <strong>Tabletas gourmet</strong><br>
+            Chocolate blanco, leche y negro con frutos secos seleccionados.<br>
+            <span class="price">Desde 6,50&nbsp;€ / unidad · Pack 3: 18&nbsp;€</span>
+          </p>
+          <p style="margin-top:.7rem;">
+            <strong>Cookies tipo americanas</strong><br>
+            Distintas combinaciones de chocolate y frutos secos.<br>
+            <span class="price">Desde 1,80&nbsp;€ / unidad · Pack 6: 10&nbsp;€ · Pack 12: 18&nbsp;€</span>
+          </p>
+          <p style="margin-top:.7rem;">
+            <strong>Galletas de jengibre</strong><br>
+            En cajitas decorativas listas para regalar.<br>
+            <span class="price">Desde 7,50&nbsp;€ / caja</span>
+          </p>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-body">
+          <h3>Packs & detalles</h3>
+          <p>
+            <strong>Bolsitas para invitados</strong><br>
+            Mini cookies, mini tabletas, mini magdalenas.<br>
+            <span class="price">Desde 3,50&nbsp;€ / unidad</span>
+          </p>
+          <p style="margin-top:.7rem;">
+            <strong>Detalles personalizados</strong><br>
+            Dulces con etiqueta y presentación adaptada al evento.<br>
+            <span class="price">Desde 5,50&nbsp;€ / unidad</span>
+          </p>
+          <p style="margin-top:.7rem;">
+            <strong>Packs especiales</strong><br>
+            Día de la Madre, San Valentín y otros packs temáticos.<br>
+            <span class="price">Desde 15&nbsp;€ – 18&nbsp;€</span>
+          </p>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-body">
+          <h3>Kits creativos</h3>
+          <p>
+            <strong>Kit decoración de galletas</strong><br>
+            Bases, glasa y toppings para que los peques creen sus diseños.<br>
+            <span class="price">Desde 12&nbsp;€</span>
+          </p>
+          <p style="margin-top:.7rem;">
+            <strong>Kit Easter cookies</strong><br>
+            Versión especial de Pascua con formas primaverales.<br>
+            <span class="price">Desde 14&nbsp;€</span>
+          </p>
+          <p style="margin-top:.7rem;">
+            <strong>Kit taza navideña</strong><br>
+            Taza temática, galletas de jengibre y preparación para chocolate caliente.<br>
+            <span class="price">Desde 16&nbsp;€</span>
+          </p>
         </div>
       </article>
     </div>
@@ -617,4 +741,3 @@
   </script>
 </body>
 </html>
-
